@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <title>EK Pyogo Rush</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell" aria-label="EK 표고버섯 연타 게임">
+      <section class="game-frame" id="gameFrame">
+        <div class="club-bg" aria-hidden="true">
+          <span class="beam beam-a"></span>
+          <span class="beam beam-b"></span>
+          <span class="beam beam-c"></span>
+          <span class="grid-glow"></span>
+        </div>
+
+        <header class="hud">
+          <div class="hud-chip">
+            <span class="hud-label">TIME</span>
+            <strong id="timeLeft">10.0</strong>
+          </div>
+          <div class="stage-badge">
+            <span>STAGE</span>
+            <strong id="stage">1</strong>
+          </div>
+          <div class="hud-chip">
+            <span class="hud-label">TARGET</span>
+            <strong><span id="touchCount">0</span>/<span id="targetCount">28</span></strong>
+          </div>
+        </header>
+
+        <div class="progress-wrap" aria-hidden="true">
+          <div class="progress-track">
+            <span class="progress-fill" id="progressFill"></span>
+          </div>
+        </div>
+
+        <section class="play-zone">
+          <div class="level-copy">
+            <span id="statusKicker">READY</span>
+            <h1 id="statusTitle">PYOGO RUSH</h1>
+          </div>
+
+          <button class="mushroom-button" id="mushroomButton" type="button" aria-label="EK 표고버섯 터치">
+            <span class="pulse-ring ring-a"></span>
+            <span class="pulse-ring ring-b"></span>
+            <img id="mushroomImage" src="./assets/ek_1.png" alt="" draggable="false" />
+            <span class="tap-burst" id="tapBurst"></span>
+          </button>
+        </section>
+
+        <footer class="controls">
+          <button class="control-button primary" id="startButton" type="button">START</button>
+          <button class="control-button" id="resetButton" type="button">RESET</button>
+        </footer>
+
+        <div class="flash-layer" id="flashLayer" aria-hidden="true"></div>
+      </section>
+    </main>
+
+    <script src="./game.js"></script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "ek-pyogo-rush",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A 16:9 mobile tap game prototype for growing an EK pyogo mushroom in 10 seconds.",
+  "scripts": {
+    "start": "python3 -m http.server 4174 --bind 127.0.0.1",
+    "check": "node --check game.js"
+  },
+  "keywords": [
+    "mobile-game",
+    "tap-game",
+    "hyperpop",
+    "static-site"
+  ],
+  "license": "UNLICENSED"
+}
